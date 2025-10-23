@@ -6,20 +6,62 @@
     <title>My first webpage</title>
     <script src="front-end javascript.js"></script>
     <style>
-        h1,h2 {
+        
+        body {
+            background-color: white;
+            align-content: center;
+        }
 
+        .container {
+               display: flex;
+               height: 100px;
+        }
+        .sidebar {
             background-color: blue;
-
-            color: brown;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-            font-size: 40px;
+            vertical-align: auto;
+        }
+        .sidebar ul{
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li{
+            margin: 15px;
+        }
+        .sidebar a{
+            color: black;
+            text-decoration: none;
+        }
+        .content{
+          flex:1;
+          color: brown;
+          text-align: center;
+          font-weight: bold;
+          font-size: 24px;
         }
     </style>
 </head>
 <body>
-   <h1>Web foundation & UI Basics</h1>
-    <h2>Welcome to the introduction of basic UI elements and Web foundation</h2>
-   <button type="button" onclick="readme()">Click here to continue!!</button>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="Home"></a></li>
+                 <li><a href="Awarda"></a></li> 
+                  <li><a href="Community"></a></li>
+                   <li><a href="Courses"></a></li>
+            </ul>
+             <h1>Web foundation & UI Basics</h1>
+        </nav>
+    </div>
+     <br>
+      <br>
+        <main class="content">
+        <h2>Welcome to the introduction of basic UI elements and Web foundation</h2>
+   <button type="button" onclick="readme()">Click here to continue</button>
+        </main>
 </body>
 </html>
