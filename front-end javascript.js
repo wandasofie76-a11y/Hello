@@ -1,3 +1,6 @@
+
 function readme(){
-    prompt ("Emter your name")
+    let Course= prompt ("Emter your prefered course:");
+
+     document.getElementById("Course").innerHTML= Course
 }
