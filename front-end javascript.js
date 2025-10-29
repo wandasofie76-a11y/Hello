@@ -7,11 +7,11 @@ function readme(){
 
 const student = {
     School: "School of Computing Sciences",
-    StudentId: 123456789,
+    StudentId: prompt("Enter your Student ID: "),
     StudentAge: 18,
 }
  student.Finalgrade = "A";
-  let info = student;
    function Readinfo(){
-      document.getElementById("student").innerHtml = student
+    let info = student.StudentId;
+      document.getElementById("student").innerHtml = student.StudentId
    }
