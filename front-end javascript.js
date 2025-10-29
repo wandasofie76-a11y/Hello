@@ -11,5 +11,7 @@ const student = {
     StudentAge: 18,
 }
  student.Finalgrade = "A";
-
- 
+  let info = student;
+   function Readinfo(){
+      document.getElementById("student").innerHtml = student
+   }
