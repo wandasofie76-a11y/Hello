@@ -4,3 +4,12 @@ function readme(){
 
      document.getElementById("Course").innerHTML= Course
 }
+
+const student = {
+    School: "School of Computing Sciences",
+    StudentId: 123456789,
+    StudentAge: 18,
+}
+ student.Finalgrade = "A";
+
+ 
